@@ -3,7 +3,7 @@ Howto setup de.indymedia.org drupal page
 
 Step by step howto for a drupal based indymedia page used by the german imc.
 
-1) Download drupal 7.x and install it somewhere, like /var/www/drupal (later called <installdir>)
+1) Download drupal 7.x and install it somewhere, like /var/www/drupal (later called "installdir")
   
 2) Init database: https://drupal.org/documentation/install/create-database
 
@@ -28,10 +28,12 @@ Alternatively you can login into the new page and install these modules manually
     
 7) Now download the features using git. At these features all the needed de.indymedia.org functionality is included. Maybe using the /tmp directory: 
 
-    cd /tmp
-    git clone https://github.com/SchoScho/features.git
+    cd <installdir>/sites/modules/
+    git clone https://github.com/SchoScho/features.git contrib
+    cd contrib
+    for i in *.tar do; tar -xvf $i; done
 
-8) Login into your new page and select structure->features and install all modules from step 7: Select one tar file after another from /tmp/feature/)
+8) Login into your new page and select structure->modules and enable all modules (features from step 7 ) at indymedia section.
 
 9) Select under Appearance the lime css
 
