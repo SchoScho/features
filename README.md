@@ -26,9 +26,9 @@ Step by step howto for a drupal based indymedia page used by the german imc.
 
 Alternatively you can login into the new page and install these modules manually - file by file. 
     
-7) Now download the features using git. At these features all the needed de.indymedia.org functionality is included. Maybe using the /tmp directory: 
+7) Now download the features using git. At these features all the needed de.indymedia.org functionality is included. The files are tar archives and have to be extracted. There is a contrib directory, which usually not exists.  
 
-    cd <installdir>/sites/modules/
+    cd <installdir>/sites/all/modules/
     git clone https://github.com/SchoScho/features.git contrib
     cd contrib
     for i in *.tar do; tar -xvf $i; done
